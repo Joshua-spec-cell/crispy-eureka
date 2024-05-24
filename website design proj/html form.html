@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Html form</title>
+<meta name="viewport" content="device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button type="button" class="btn"><a href="index.html">Home</a></button>
+    <h1> Sign Up Form</h1>
+    <p> Input your information in the form as requested</p>
+    <form>
+<fieldset>
+    <label id="firstname" for="firstname">First Name: <input required type="text" placeholder="Jack"></label><br>
+    <label id="surname" for="surname">Surname: <input required type="text" placeholder="Ryan"></label><br>
+    <label id="email" for="email">Email: <input placeholder="name@gmail.com..." type="email"></label>
+</fieldset>
+<fieldset>
+    <label for="upload-a-profile-picture">Upload a profile picture <input type="file"></label><br>
+    <label id="number-label" for="input-your-age">Input your age: <input type="number" id="number" min="12" max="30" placeholder="20..."></label><br>
+    <label for="how-did-you-hear-about-us">How did you hear about us
+        <select>
+            <option value="1">(Choose One)</option>
+            <option value="2">Youtube</option>
+            <option value="3">X (Twitter)</option>
+            <option value="4">Billboard</option>
+            <option value="5">A Friend</option>
+        </select>
+    </label><br>
+    <label for="Provide-a-bio:">Provide a bio: <textarea rows="3" cols="30" placeholder="I like coding on the beach..."></textarea></label>
+</fieldset>
+</fieldset>
+<p class="age">Select your age group</p> 
+<fieldset><label for="12-18"><input id="12-18" class="inline" type="radio" value="1" name="radio"> 12-18</label><br>
+<label for="18-25"><input id="18-25" class="inline" type="radio" value="2" name="radio"> 18-25</label><br>
+<label for="25-30"><input id="25-30" class="inline" type="radio" value="3" name="radio"> 25-30</label>
+</fieldset>
+<fieldset>
+     <p>Acceptance of conditions</p>
+ <label for="terms-and-conditions"> <input id="terms-and-conditions" type="checkbox" required value="1" name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label><br>
+  <label for="rules-and-obligations"> <input id="rules-and-obligations" type="checkbox" required value="2" name="rules-and-obligationss" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">rules and obligations</a></label>
+</fieldset>
+<input id="submit" type="submit" value="Submit">
+</form>
+</body>
+</html>
